@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Formulario</title>
+
+	<script language="JavaScript" src="validaciones.js"></script>
+</head>
+
+<body>
+<h2>Formulario</h2>
+
+<form name="thisForm" action="servlet/LoginServlet" method="POST" onsubmit="return validateForm()">
+	<label for="CUI">CUI: </label>
+	<input type="text" name="CUI" id="CUI" maxlength="8" placeholder="Ingrese su CUI"><br><br>
+
+	<label for="Clave">Clave: </label>
+	<input type="text" name="Clave" id="Clave" maxlength="50" placeholder="Ingrese su Clave"><br><br>
+
+	<input type="submit" name="Submit">
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!--
+     Escribir un programa Javascript para validar los datos (Solo aceptar CUI que cumpla el formato UNSA, Clave no puede ser vacía) enviados (2 puntos).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Comprobar CUI</title>
+    <script src="./validacion.js"></script>
+  </head>
+  <body>
+    <main>
+      <form method="POST" onsubmit="return valudarFormulario()">
+        <label for="CUI"
+          ><span> CUI:</span
+          ><input
+            type="text"
+            name="CUI"
+            id="CUI"
+            maxlength="8"
+            placeholder="Ingrese su CUI"
+            required
+          />
+        </label>
+        <br /><br />
+
+        <label for="Password"
+          ><span>Clave:</span>
+          <input
+            type="text"
+            name="Password"
+            id="Password"
+            maxlength="50"
+            placeholder="Ingrese su Contraseña: "
+            required
+          />
+        </label>
+        <br /><br />
+
+        <input type="submit" name="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
