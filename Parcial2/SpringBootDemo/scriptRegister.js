@@ -17,10 +17,10 @@ $(document).ready(function() {
 			success: function (msg) {
                if (msg) {
                    alert(form_name + " successfully registered");
-                   console.log("Category successfully registered");
+                   console.log("Cateoria Reguistrad : )");
                } else {
                    alert("could not save " + form_name);
-                   console.log("Something went wrong, the category was not registered");
+                   console.log("No se pudo guardar");
                }
            },
 		});
