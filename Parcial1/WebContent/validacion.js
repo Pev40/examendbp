@@ -1,9 +1,9 @@
-function validateForm() {
+function valudarFormulario() {
 	var cui, clave;
 	cui = document.getElementById("CUI").value;
-	clave = document.getElementById("Clave").value;
+	desbloqueable = document.getElementById("Password").value;
 
-	if (cui == "" || clave == "") {
+	if (cui == "" || desbloqueable == "") {
 		alert("Hay campos obligatorios que faltan llenar");
 		return false;
 	}

@@ -1,26 +1,48 @@
+<!--
+     Escribir un programa Javascript para validar los datos (Solo aceptar CUI que cumpla el formato UNSA, Clave no puede ser vacía) enviados (2 puntos).
+-->
+
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Comprobar CUI</title>
+    <script src="./validacion.js"></script>
+  </head>
+  <body>
+    <main>
+		<form name="thisForm" action="servlet/LoginServlet" method="POST" onsubmit="return valudarFormulario()">
+        <label for="CUI"
+          ><span> CUI:</span
+          ><input
+            type="text"
+            name="CUI"
+            id="CUI"
+            maxlength="8"
+            placeholder="Ingrese su CUI"
+            required
+          />
+        </label>
+        <br /><br />
 
-<html>
+        <label for="Password"
+          ><span>Clave:</span>
+          <input
+            type="text"
+            name="Password"
+            id="Password"
+            maxlength="50"
+            placeholder="Ingrese su Contraseña: "
+            required
+          />
+        </label>
+        <br /><br />
 
-<head>
-	<title>Formulario</title>
-
-	<script language="JavaScript" src="validaciones.js"></script>
-</head>
-
-<body>
-<h2>Formulario</h2>
-
-<form name="thisForm" action="servlet/LoginServlet" method="POST" onsubmit="return validateForm()">
-	<label for="CUI">CUI: </label>
-	<input type="text" name="CUI" id="CUI" maxlength="8" placeholder="Ingrese su CUI"><br><br>
-
-	<label for="Clave">Clave: </label>
-	<input type="text" name="Clave" id="Clave" maxlength="50" placeholder="Ingrese su Clave"><br><br>
-
-	<input type="submit" name="Submit">
-</form>
-
-</body>
-
+        <input type="submit" name="Submit" />
+      </form>
+    </main>
+  </body>
 </html>
